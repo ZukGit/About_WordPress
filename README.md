@@ -6,4 +6,4 @@
 
 ### No.1
 
-![样式一](./image/style1.png)
+![样式一](./Image/style1.png)
