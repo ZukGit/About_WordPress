@@ -4,6 +4,17 @@
 ![初始模样](./Image/001.jpg)
 
 
+## 版本1
+![初始模样](./Image/style1.png)
+
+
+## 版本2
+![初始模样](./Image/style2.jpg)
+
+## 版本3
+![初始模样](./Image/style3.jpg)
+
+
 ##  修改背景颜色
 1. 登录    http://host810096584.s248.pppf.com.cn/admin    进入wordpress后台设置
 2. 仪表盘 》 外观 》 主题 》 自定义  》 背景颜色 》 
