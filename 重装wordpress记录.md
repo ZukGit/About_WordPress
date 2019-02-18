@@ -49,3 +49,6 @@ http://www.51yuansu.com/   寻找免扣背景图作为背景图片  本地保存
 ##  安装插件  Markdown
 仪表盘 》 Settings 》 Markdown (使文章支持markdown语法) 勾选  √
 安装插件    WP Editor.md
+
+## 备份数据库
+小鸟云 》 数据库FTP地址( 区别于网站FTP ) 》 backup 》 xxxx.sql
