@@ -52,3 +52,43 @@ http://www.51yuansu.com/   寻找免扣背景图作为背景图片  本地保存
 
 ## 备份数据库
 小鸟云 》 数据库FTP地址( 区别于网站FTP ) 》 backup 》 xxxx.sql
+
+## 安全保护措施
+
+
+### /wwwroot/.htaccess 文件加入保护
+```
+
+<Files xmlrpc.php>
+Order Deny,Allow
+Deny from all
+</Files>
+
+```
+
+```
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# 加入保护
+<Files xmlrpc.php>
+Order Deny,Allow
+Deny from all
+</Files>
+
+# END WordPress
+```
+
+### functions.php 加入保护
+/wwwroot/wp-content/themes/StyleTheme3/functions.php 
+```
+
+add_filter('xmlrpc_enabled', '__return_false');
+```
